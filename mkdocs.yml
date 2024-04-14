@@ -1,0 +1,99 @@
+site_name: APRS Protocol Specification - Training
+site_url: https://aprs-protocol-spec-training.aprsfoundation.org
+site_author: APRS Foundation Inc.
+
+# Repository
+# repo_name: APRSFoundation/aprs-protocol-specification
+# repo_url: https://github.com/APRSFoundation/aprs-protocol-specification
+
+# Copyright
+copyright: Copyright &copy; 2024 - APRS Foundation Inc.
+
+theme:
+  name: material
+  include_homepage_in_sidebar: true
+  palette:
+    - media: '(prefers-color-scheme)'
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: 'index.md'
+  - Version: 'version.md'
+  - Foreward: 'foreward.md'
+  - Preamble: 'preamble.md'
+  - Author's Foreward: 'authors-foreward-disclaimer.md'
+  - The Structure of this Specification: 'structure-spec.md'
+  - Introduction to APRS: 'intro-to-aprs.md'
+  - Design Philosophy: 'design-philosophy.md'
+  - APRS and AX.25: 'aprs-and-ax25.md'
+  - APRS Data in the AX.25 Destination and Source Address Fields: 'aprs-data-ax25-dst-src.md'
+  - APRS Data in the AX.25 Information Field: 'aprs-data-ax25-info.md'
+  - Time and Position Formats: 'time-position.md'
+  - APRS Data Extensions: 'aprs-data-extensions.md'
+  - Position and DF Report Data Formats: 'position-df-report.md'
+  - Compressed Position Report Data Formats: 'compressed-position.md'
+  - Mic-E Data Format: 'mic-e-data.md'
+  - Object and Item Reports: 'object-and-item.md'
+  - Weather Reports: 'weather-reports.md'
+  - Telemetry Data: 'telemetry-data.md'
+  - Messages, Bulletins, and Annoucements: 'msg-bulletin.md'
+  - Station Capabilities, Queries, and Responses: 'station-capabilities.md'
+  - Status Reports: 'status-reports.md'
+  - Network Tunneling and Third-Party Digipeating: 'network-tunneling.md'
+  - User-Defined Data Format: 'user-defined-data.md'
+  - Other Packets: 'other-packets.md'
+  - APRS Symbols: 'aprs-symbols.md'
+  - Appendices:
+    - Appendix 1 - APRS Data Formats: 'appendices/appendix-01.md'
+    - Appendix 2 - The APRS Symbol Tables: 'appendices/appendix-02.md'
+    - Appendix 3 - 7-bit ASCII Code Tables: 'appendices/appendix-03.md'
+    - Appendix 4 - Decimal-to-Hex Conversion Tables: 'appendices/appendix-04.md'
+    - Appendix 5 - Glossary: 'appendices/appendix-05.md'
+    - Appendix 6 - References: 'appendices/appendix-06.md'
+    - Appendix 7 - Document Release History: 'appendices/appendix-07.md'
+  - Tables:
+    - APRS SSIDs: 'tables/aprs-ssids.md'
+    - Compressed Position Data: 'tables/compressed-position-data.md'
+    - Units Conversion Table: 'tables/units-conversion-table.md'
+  - Equations:
+    - Mathematical Equations (NEEDS WORK - LOTS MISSING): 'equations/math-yuck.md'
+  - Other:
+    - Admonitions (TESTING): 'misc/admonitions.md'
+    - pandoc (TESTING): 'misc/pandoc.md'
+  - APRS101 - Original (other revisions):
+    - N7FYO - ge0rg - RST to MD: 'aprs101-original/aprs101-doc-n7fyo-ge0rg.md'
+    - WB2OSZ Edits - APRS101 - Single Page: 'aprs101-original/aprs101-doc.md'
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - toc:
+      permalink: true
+
+
+plugins:
+  - minify:
+      minify_html: true
+  - search
+  - git-revision-date-localized
+  - open-in-new-tab
+
