@@ -37,6 +37,7 @@ theme:
 
 nav:
   - Home: 'index.md'
+  - Demo Section: 'demo-section.md'
   - Version: 'version.md'
   - Foreward: 'foreward.md'
   - Preamble: 'preamble.md'
