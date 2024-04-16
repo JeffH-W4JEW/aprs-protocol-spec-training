@@ -37,6 +37,7 @@ theme:
 
 nav:
   - Home: 'index.md'
+  - JeffH - W4JEW - Chapter: 'jeffh-w4jew-chapter.md'
   - Version: 'version.md'
   - Foreward: 'foreward.md'
   - Preamble: 'preamble.md'
